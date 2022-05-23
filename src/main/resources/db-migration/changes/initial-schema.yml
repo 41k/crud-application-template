@@ -1,0 +1,14 @@
+databaseChangeLog:
+  - changeSet:
+      id: initial-schema
+      author: author
+      changes:
+        - createTable:
+            tableName: users
+            columns:
+              - column:
+                  name:  id
+                  type:  varchar(255)
+              - column:
+                  name:  name
+                  type:  varchar(255)
